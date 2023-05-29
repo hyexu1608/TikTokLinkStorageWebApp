@@ -92,6 +92,34 @@ async function dumpVideoTable() {
   return result;
 }
 
+// app.post("/insertPref", async function(req, res) {
+//   try {
+//     let prefObj = req.body;
+//     console.log(prefObj);
+//     let rowID_better = prefObj.better;
+//     let rowID_worse = prefObj.worse;
+//     //console.log("the row ID of the better video is", rowID_better);
+//     //console.log("the row ID of the worse video is", rowID_worse);
+
+//     const sql = "insert into PrefTable (better, worse) values (?,?)";
+//     await db.run(sql, [rowID_better, rowID_worse]);
+
+//     //step 7
+//     const PrefContents = await dumpPrefTable();
+//     console.log(PrefContents);
+//     let numOfPicks = PrefContents.length;
+//     if (numOfPicks < 15) {
+//       console.log("this is the current num of pref:", numOfPicks);
+//       res.json("continue");
+//     }
+//     else {
+//       res.json("pick winner");
+//     }
+
+//   } catch (err) {
+//     res.status(500).send(err);
+//   }
+// });
 app.post("/insertPref", async function(req, res) {
   try {
     let prefObj = req.body;
@@ -102,7 +130,7 @@ app.post("/insertPref", async function(req, res) {
     //console.log("the row ID of the worse video is", rowID_worse);
 
     const sql = "insert into PrefTable (better, worse) values (?,?)";
-    await db.run(sql, [rowID_better, rowID_worse]);
+    await db.run(sql,[rowID_better, rowID_worse]);
 
     //step 7
     const PrefContents = await dumpPrefTable();
@@ -115,8 +143,8 @@ app.post("/insertPref", async function(req, res) {
     else {
       res.json("pick winner");
     }
-
-  } catch (err) {
+    
+  } catch(err) {
     res.status(500).send(err);
   }
 });

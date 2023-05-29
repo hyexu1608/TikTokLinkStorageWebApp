@@ -7,11 +7,15 @@ button.addEventListener("click",addNewButtonPress);
 
 let playgameButtom = document.getElementById("play_game");
 playgameButtom.style.backgroundColor = "rgba(238,29,82,0.5)"
+playgameButtom.addEventListener("click",playGameRedirect);
 
 
 function addNewButtonPress() { 
   window.location = "tiktokpets.html";
 }
+function playGameRedirect() {
+  window.location = './compare.html';
+} 
 
 let delete1 = document.getElementById("x1");
 let delete2 = document.getElementById("x2");
@@ -158,6 +162,5 @@ function deleteButtonPress(num) {
     console.log("Error",err);
   });
 } 
-
 
 
