@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 350px;
+  font-family: Boogaloo;
+  font-size: 48px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+div.buton {
+  display: flex;
+  margin-top: 30px;
+  height: 45px;
+  justify-content: space-evenly;
+}
+
+main {
+  text-align: center;
+  font-family: Boogaloo;
+  height: 125px;
+  font-size: 30px;
+}
+
+#report {
+  color: rgba(238, 29, 82, 0.9);
+}
+
+div.buton button {
+  background-color: rgba(238, 29, 82, 0.9);
+  border-color: rgba(238, 29, 82, 0.9);
+  width: 170px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-family: Inter;
+  border: 0;
+}
+
+#buttonlink {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+@media (max-width: 480px)
+{
+  header{
+    font-size: 24px; 
+  }
+
+  main{
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 900px)
+{
+  header{
+    font-size: 30px;
+    height: 250px;
+  }
+
+  main{
+    font-size: 24px;
+  }
+}
