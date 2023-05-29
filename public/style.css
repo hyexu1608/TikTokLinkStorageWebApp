@@ -159,7 +159,7 @@ div.containers{
     display: flex;
     flex-direction: row;
     justify-content: center;
-  padding-left: 200px;
+  /* padding-left: 200px; */
 }
 
 div.contain_box{
@@ -203,6 +203,7 @@ div.cols{
     cursor: pointer;
     transition: 0.3s ease;
   padding-bottom: 65px;
+  width:40px;
 }
 
 

@@ -8,8 +8,14 @@ reloadButton.addEventListener("click",function () {
   reloadVideo(tiktokDiv);
 });
 
-
-
+let resetButton = document.getElementById("reset");
+// set up button to reload video in "tiktokDiv"
+resetButton.addEventListener("click",function () {
+  reset();
+});
+function reset() {
+  window.location = './myvideos.html';
+} 
 // always shows the same hard-coded video.  You'll need to get the server to 
 // compute the winner, by sending a 
 // GET request to /getWinner,
