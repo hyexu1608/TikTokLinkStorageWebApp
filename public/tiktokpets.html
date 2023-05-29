@@ -1,100 +1,46 @@
-<!DOCTYPE html>
+<!doctype HTML> 
 
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+<HTML> 
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@600&family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+<HEAD>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" 
+        href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="button.js"></script>
+</HEAD>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter1&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="ttpets.js"></script>
-  </head>
-
-  <body>
+<body> 
     <header>
-      <div id="container">
-        <h1 class="header_element" id="title1">TikTok Pets</h1>
-        <!-- need to add button?-->
-        <div class="buttton">
-          <button type="submit" id="MVbutton">My Videos</button>
-        </div>
+      <div class="headerLeft"></div>
+      <div class="headerCenter">
+        <h1 class="main-h1">Tiktok Pets</h1>
+      </div>
+      <div class="headerRight">
+        <button class="myvideos" id="myvid">My Videos</button>
       </div>
     </header>
-  </body>
-
-  <main>
-    <div class="wrapper">
-      <div class="title" id="try2">Submit a video:</div>
-      <div class="inner-container">
-        <div action="#" class="login">
-          <div class="field">
-            <label>Username:</label>
-            <input
-              id="input1"
-              class="phText"
-              type="text"
-              placeholder="awesometiktokuser123"
-              required
-            />
-          </div>
-          <div class="field">
-            <label1>TikTok URL:</label1>
-            <input
-              id="input2"
-              class="phText"
-              type="text"
-              placeholder="http://tiktok.com/12345"
-              required
-            />
-          </div>
-          <div class="field">
-            <label2 id="try3">Video Nickname</label2>
-            <input
-              id="input3"
-              class="phText"
-              type="text"
-              placeholder="Bob the supercat"
-              required
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="buton">
-      <div class="buton-inside"></div>
-      <button id="try1" type="button">
-        <a href="acknowledge.html" id="buttonlink">Continue</a>
-      </button>
-    </div>
-  </main>
-
-  <!--<script>
-  // Your Scripts
-  // var name = document.getElementById('try1');
-
-  //function changeColor() {
-  //  var demo = document.getElementById("title1");
-  //  demo.style.color = black;
-//}</script> 
   
-//-->
-</html>
+    <div id="app">
+        <h2>Submit a video:</h2>
+        <div class="formfields">
+            <div class="submit">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="user" placeholder="username" size="40">
+            </div>
+            <div class="submit">
+                <label for="URL">Tiktok URL:</label>
+                <input type="text" name="URL" id="URL" placeholder="URL" size="40">
+            </div>
+            <div class="submit">
+                <label for="nickname">Video nickname:</label>
+                <input type="text" name="nickname" id="nickname" placeholder="nickname" size="40">
+            </div>
+        </div>
+    </div>
+    <button id="continue">Continue</button>
+    
+</body>
+
+</html> 

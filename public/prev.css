@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --magenta : rgba(238, 29, 82, 0.9);
+    --cyan : rgb(105, 201, 208);
+}
+
+body {
+    margin: 50px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+;
+    
+}
+
+
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+}
+
+div.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+div.vid_portion{
+  margin-bottom: 40px;
+}
+
+
+div.video {
+    width: 325px;
+    height: 563px;
+    padding: 15px;
+    padding-bottom: 70px;
+    border-radius: 15px;
+    background-color: var(--magenta);  
+}
+
+
+blockquote {
+  align: center;
+  border-style: solid;
+  border-color:  var(--ttmagenta);
+  border-width: 2px;
+  border-radius: 15px;
+  background-color:var(--ttmagenta);
+
+}
+
+iframe {
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+#name_store{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-top: -55px;
+  padding-bottom: 50px;
+ 
+}
+
+
+#cont_button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.fa-redo-alt{
+    color: var(--magenta);
+    transform: rotate(225deg) scale(4) scaleY(-1);
+  cursor: pointer;
+  
+}
+
+
+button {
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    margin: 10px;
+}
+
+
+
+@media screen and (max-width:900px){
+
+  body {
+    margin: 50px;
+  }
+  #cont_button{
+    justify-content: center;
+  }
+
+  .fa-redo-alt{
+    margin-bottom: 50px;
+  }
+
+}
+
+
+
+@media screen and (max-width:700px){
+
+  body {
+    margin: 50px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  #cont_button{
+    justify-content: center;
+  }
+
+  .fa-redo-alt{
+    margin-bottom: 50px;
+  }
+
+  
+}

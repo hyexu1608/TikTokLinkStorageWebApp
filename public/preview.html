@@ -1,0 +1,49 @@
+<!doctype HTML>
+
+<html lang="en">
+<head> 
+  <meta charset="utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" 
+        href="https://ecs-162-spring-2022.profamenta.repl.co/reset.css" />
+  <link rel="stylesheet" type="text/css" href="prev.css" />
+<!--   <script defer src="button.js"></script> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  <script defer src="videoViewer.js"></script>
+</head>
+
+<body> 
+  <header>
+      <h1>Video Preview</h1>
+  </header>
+
+  <div class="center">
+    
+    <div class ="vid_portion" id="prev_vid">
+      <div class ="video">
+        <div id = "tiktokDiv"></div>
+      </div>
+      <h2 id="name_store"></h2>
+      <script>
+          document.getElementById("name_store").innerHTML = 
+          `<h3><span>${sessionStorage.getItem("nickname")}</span></h3>`;
+      </script>
+    </div>
+
+    <i id="rel" class="fas fa-redo-alt"></i> 
+  </div>
+
+  <div id="cont_button">
+          <button id="continue">Continue</button>
+    </div>
+  
+
+
+  
+
+  
+
+
+
+</body>
+</html>

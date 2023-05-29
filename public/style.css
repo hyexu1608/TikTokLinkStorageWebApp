@@ -1,241 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --cyan : rgb(105, 201, 208);
+}
+
 body {
-}
-
-#title1 {
-  display: flex;
-  justify-content: center;
-}
-
-header {
-  flex-direction: row;
-  height: 250px;
-  font-family: Boogaloo;
-  font-size: 48px;
-  width: 100%;
-  justify-content: space-around;
-}
-
-h1.header_element {
-  margin-top: 100px;
-}
-
-div.buttton {
-  height: 55px;
-  width: 200px;
-}
-
-div.buttton button {
-  background-color: rgba(238, 29, 82, 0.9);
-  height: 100%;
-  width: 200px;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 12px;
-  font-family: Inter;
-}
-
-.inner-container .field input::placeholder {
-  font-family: Inter;
-  font-size: 16px;
-  padding-left: 18px;
-  color: black;
-}
-
-.wrapper {
-  max-width: 1050px;
-  width: 500px;
-  background: linear-gradient(
-    to bottom right,
-    rgba(238, 29, 82, 0.9),
-    rgba(105, 201, 208)
-  );
-  border-radius: 25px;
-  height: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -100px;
-}
-
-div.title {
-  padding-top: 70px;
-  text-align: center;
-  font-size: 24px;
-  font-family: Inter;
-  color: white;
-}
-.inner-container .field {
-  height: 75px;
-  width: 100%;
-  border-radius: 25px;
-}
-
-.inner-container .field input {
-  height: 65px;
-  border-radius: 15px;
-  width: 350px;
-  border: solid #e1e1e1;
-  border-width: 2.5px;
-   
-}
-
-.inner-container .field input:hover{
-  border: solid #69C9D0;
-  border-width: 2.5px;
-}
-
-
-
-.inner-container .field {
-  display: flex;
-  flex-direction: column;
-  padding-top: 40px;
-  border-radius: 25px;
-  text-align: center;
-}
-
-div.field {
-  justify-content: center;
-  align-items: center;
-
-}
-
-
-.field label {
-  font-size: 16px;
-  color: white;
-  padding-right: 260px;
-  font-family: Inter;
-}
-
-.field label1 {
-  font-size: 16px;
-  color: white;
-  padding-right: 255px;
-  font-family: Inter;
-}
-
-.field label2 {
-  font-size: 16px;
-  color: white;
-  padding-right: 218px;
-  font-family: Inter;
-}
-
-div.buton {
-  display: flex;
-  height: 70px;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-div.buton button {
-  background-color: rgba(238, 29, 82, 0.9);
-
-  width: 200px;
-  color: white;
-  font-size: 18px;
-  cursor: pointer;
-  border-radius: 12px;
-  font-family: Inter;
-}
-
-#buttonlink {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.phText::placeholder {
-  font-family: Inter;
-  opacity: 0.6;
-}
-
-#MVbutton {
-  position: absolute;
-  height: 70px;
-  right: 10%;
-  top: 105px;
-}
-
-/* MEDIA-QUERY */
-@media (max-width: 900px) {
-  #title1 {
-    margin-right: 270px;
-  }
-
-  header {
-    height: 250px;
-    font-family: Boogaloo;
-    font-size: 48px;
-    width: 100%;
-  }
-  h1.header_element {
-  }
-  .wrapper {
-    width: 470px;
-    height: 470px;
-  }
-  div.title {
-    padding-top: 50px;
-    text-align: center;
-    font-size: 24px;
-    font-family: Inter;
-    color: white;
-  }
-
-  .field {
-    margin-bottom: -15px;
-  }
-}
-/* Mobile */
-@media (max-width: 480px) {
-  div.title {
-    padding-top: 30px;
-    text-align: center;
-    font-size: 24px;
-    font-family: Inter;
-    color: white;
-  }
-  .wrapper {
-    width: 400px;
-    height: 400px;
-  }
-  header {
-    font-size: 32px;
-  }
-  div.title {
-    font-size: 20px;
-  }
-  #buttonlink {
-    font-size: 16px;
-  }
-  div.buttton button {
-    font-size: 14px;
-  }
-  .inner-container .field input::placeholder {
-    font-size: 14px;
-  }
-  div.buton button {
-    font-size: 14px;
-  }
-  .inner-container .field {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
-    border-radius: 25px;
-    text-align: center;
-  }
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+/* issues with left right margin*/
+.col1 {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  padding-top: 30px;
+}
 
-  #title1 {
-    margin-right: 250px;
-    margin-top: 120px;
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}  
+
+div.headerRight {
+  width: 18%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+
+div.headerLeft {
+  width: 18%;
+}
+
+div.headerCenter {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+header.redirect {
+    justify-content: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-family: "Boogaloo";
+}
+
+/* Slightly altered default h2 tag. */
+h2 {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+span {
+    color: var(--magenta);
+}
+
+button {
+    border-radius: 10px;
+    width: 130px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--magenta);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+    margin: 10px;
+}
+
+
+button:hover {
+    background-color: var(--cyan);
+}
+
+input {
+    font-weight: 400;
+    width: 70%;
+    height: 40px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid transparent; /* Adding transparent border to avoid weird movement whenever border is added. */
+}
+
+input[type=text]:focus {
+    border: 1px solid turquoise;
+}
+
+label {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.formfields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 390px;
+    width: 390px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-70deg, var(--cyan), 60%, var(--magenta));
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px;
+}
+
+/*  
+
+    ================
+        MY VIDEOS
+    ================
+*/
+div.containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  padding-left: 200px;
+}
+
+div.contain_box{
+    display: flex;
+    flex-direction: row;
+}
+
+div.cols{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.DBS{
+    font-weight: 400;
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 12px;
+    border: 1px solid; /* Adding transparent border to avoid weird movement whenever border is added. */
+    border-color: #B1B1B1;
+    background-color: #FCFCFC;
+}
+
+.x{
+  display:flex;
+  justify-content: left;
+  align-items: top;
+  
+    border: none;
+    font-size: 54px;
+    font-weight: 500;
+    font-family: 'Boogaloo';
+    text-align: center;
+    color: var(--magenta);
+    background: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  padding-bottom: 65px;
+}
+
+
+.x:hover{
+    background: none;
+}
+
+#DB1,#DB2,#DB3,#DB4,#DB5,#DB6,#DB7,#DB8{
+  display:flex;
+  align-items: center;
+}
+
+
+
+
+@media screen and (max-width:900px) {
+  body{
+    justify-content: space-evenly;
   }
+ div.headerCenter {
+    position: absolute;
+}
+
+    h1 {
+      font-size: 32px;
+      padding-top: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-top: 25px;
+    }
 
   header {
-    height: 250px;
-    font-family: Boogaloo;
-    width: 100%;
+    justify-content: right;
   }
- 
+
+  div.headerRight {
+  width: 30%;
+  justify-content: center;
+}
+
+div.headerLeft {
+  display: none;
+}
+
+div.headerCenter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+div.contain_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+  button {
+    width: 230px;
+    height: 70px;
+}
+
+
+    #app {
+        width: 320px;
+    }
+}
+
+
+
+@media screen and (max-width:700px) {
+
+    body{
+      margin: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      padding-top: 20px;
+      padding-left: 100px;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-top: 25px;
+    }
+
+    header {
+      justify-content: right;
+    }
+
+
+    div.headerLeft {
+      display: none;
+    }
+  
+    div.headerCenter {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    div.contain_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /*padding-left: 200px;*/
+        /* align-items: center; */
+        justify-content: center;
+    }
+  
+      button {
+        width: 230px;
+        height: 70px;
+    }
+    
+  
+      #app {
+          width: 320px;
+      }
 }
